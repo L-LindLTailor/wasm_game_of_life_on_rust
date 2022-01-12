@@ -33,7 +33,7 @@ func homePage(w http.ResponseWriter, _ *http.Request)  {
 		Money: 100,
 		AvgGrades: 7.77,
 		Happiness: 0.777,
-		Hobbies: []string{"Programming", "Sex"},
+		Hobbies: []string{"Programming", "Sport"},
 	}
 	tmpl, _ := template.ParseFiles("wasm_game_of_life/www/index.html")
 	err := tmpl.Execute(w, bob)
